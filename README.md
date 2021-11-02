@@ -1,11 +1,22 @@
 # MediaCloud bulk article downloader
  Given news headlines with links from mediacloud extracts all text of those articles, multithreading enabled !
- ## features :
  
 ## Features
 * get article text
 * set the number of threads i.e the number of parallel processors
 * checkpoints enabled, set after how many downloads checkpoints must be created
+
+### How to set the number of threads
+* threads will decide how many agents will execute this code parallely,
+* therefore, this feature reduces execution time by a factor of number of threads
+* you can use the default number of threads i.e 10, but to get least execution time
+without puting too much stress on your machine choose number of threads lesser than
+the logical processors in your machine
+* in windows the logical processors can be checked by task manager:
+ * Open Task Manager
+ * Select Performance tab
+ * Look for Cores and Logical Processors (Threads)
+![logical processors](https://github.com/rushil-thareja/MediaCloud_bulk_article_downloader/blob/main/screenshots/checking_threads.JPG)
 
 ## Process
 * go to mediacloud

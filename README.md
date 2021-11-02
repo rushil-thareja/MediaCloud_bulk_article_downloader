@@ -3,7 +3,7 @@
  
 # Installing
 * download zip
-* pip install -r /path/to/requirements.txt
+* run in cmd : pip install -r /path/to/requirements.txt
 
 
 ## Features
